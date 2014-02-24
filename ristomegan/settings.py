@@ -9,7 +9,10 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from os import path
+from os import path, environ
+
+ENVIRONMENT = environ.get('ENVIRONMENT', None)
+
 BASE_DIR = path.dirname(path.dirname(__file__))
 
 
@@ -57,16 +60,28 @@ WSGI_APPLICATION = 'ristomegan.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wedding',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '',
+if ENVIRONMENT:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'wedding',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',
+            'PORT': '',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'merrywhe_wedding',
+            'USER': 'merrywhe_root',
+            'PASSWORD': 'risto18',
+            'HOST': '127.0.0.1',
+            'PORT': '',
+        }
+    }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
