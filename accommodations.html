@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Megan and Risto's wedding web site">
+    <meta name="author" content="Risto Keravuori">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+    <title>Megan & Risto's Wedding</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="static/css/accommodations.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+                
+            <header class="clearfix">
+                <div class="inner center width-control">
+                    <h3 class="header-name">Megan <small>&amp;</small> Risto</h3>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rsvp.html">RSVP</a></li>
+                        <li class="active"><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="registry.html">Registry</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main>
+                <h1>Accommodations</h1>
+                <p class="lead">Each hotel has a online reservation portal for our room blocks.<br>
+                In addition, you can call any of them; just be sure to ask for the Bresnahan/Keravuori room block.</p>
+                <div class="center width-control">
+                    <div class="panel-group accordian-group" id="accordian">
+
+                        
+                        <div class="panel panel-default" id="lenox">
+                            <div class="panel-gradient">
+                                <a data-toggle="collapse" data-parent="#accordian" href="#collapseOne">
+                                    <div class="panel-heading" id="collapserOne"></div>
+                                </a>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-content">
+                                            <ul>
+                                                <li><h3>The Lenox Hotel</h3></li>
+                                                <li>61 Exeter Street, Boston, MA 02116</li>
+                                                <li>800-225-7676</li>
+                                                <li><a href="https://gc.synxis.com/rez.aspx?tps=fml&arrive=2014-8-29&adult=1&step=1&hotel=37&shell=fBOSLH2&chain=56&template=fBOSLH&avcurrency=USD&group=BRES082914">Reserve a room online</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        
+                        <div class="panel panel-default" id="copley">
+                            <div class="panel-gradient">
+                                <a data-toggle="collapse" data-parent="#accordian" href="#collapseTwo">
+                                    <div class="panel-heading" id="collapserTwo"></div>
+                                </a>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body center">
+                                        <div class="panel-content">
+                                            <ul>
+                                                <li><h3>The Copley Square Hotel</h3></li>
+                                                <li>47 Huntington Avenue, Boston, MA 02116</li>
+                                                <li>800-225-7062</li>
+                                                <li><a href="https://gc.synxis.com/rez.aspx?Hotel=18273&Chain=10069&template=CopleyITIN&shell=Flex2&arrive=8/29/2014&depart=9/1/2014&adult=2&child=0&group=ZZW8">Reserve a room online</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default" id="westin"> 
+                            <div class="panel-gradient">
+                                <a data-toggle="collapse" data-parent="#accordian" href="#collapseThree">
+                                    <div class="panel-heading" id="collapserThree">
+                                        <h4 class="panel-title">
+                                            
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-content">
+                                            <ul>
+                                                <li><h3>The Westin Copley Place</h3></li>
+                                                <li>10 Huntington Avenue, Boston, MA 02116</li>
+                                                <li>617-262-9600</li>
+                                                <li><a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1311052347&key=95B5C">Reserve a room online</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                            
+                        
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="inner center width-control">
+                    <p>Site by <a href="http://risto.io">Risto Keravuori</a>.</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a[data-toggle="collapse"]').click(function() {
+                var target = $(this).attr('href').replace('#', '');
+                $('.panel-collapse').each(function() {
+                    if ($(this).attr('id') != target) {
+                        if ($(this).hasClass('in')) {
+                            $(this).collapse('hide');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

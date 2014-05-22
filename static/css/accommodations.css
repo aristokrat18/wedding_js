@@ -1,0 +1,88 @@
+/************************* BACKGROUND *************************/
+.site-wrapper {
+    background-image: url("../img/accommodations_main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/************************* MAIN *************************/
+
+.main-names div {
+    display:inline-block;
+}
+
+@media (min-width:768px) {
+    header {
+        background-image: url("../img/accommodations_header.png");
+        background-position: top;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.panel-default,
+.panel-default > .panel-heading {
+    background-color: transparent;
+}
+
+#lenox {
+    background-image: url('../img/lenox.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#copley {
+    background-image: url('../img/copley.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#westin {
+    background-image: url('../img/westin.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.panel-gradient {
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background:    -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background:     -ms-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background:      -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+.panel-heading {
+    height: 100px;
+}
+
+.panel-body {
+    height: 200px;
+    display: inline-table;
+}
+
+.panel-content {
+    display: table-cell;
+    vertical-align: bottom;
+    
+}
+
+.panel-content > ul {
+    padding: 0px;
+}
+
+.panel-content a {
+    text-decoration: underline;
+}
+
+.panel-content a:hover {
+    color: #ccc;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ristomegan-wedding",
+  "version": "0.0.2",
+  "description": "wedding site for megan and risto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://aristokrat@bitbucket.org/aristokrat/wedding.git"
+  },
+  "keywords": [
+    "risto",
+    "megan",
+    "ristomegan",
+    "wedding"
+  ],
+  "author": "risto keravuori",
+  "license": "ISC",
+  "dependencies": {
+    "logfmt": "~1.1.2",
+    "express": "~4.3.0"
+  }
+}

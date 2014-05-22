@@ -1,0 +1,24 @@
+/************************* BACKGROUND *************************/
+.site-wrapper {
+    background-image: url("../img/rsvp_main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/************************* MAIN *************************/
+
+.coming-soon h1 div {
+    display:inline-block;
+    margin: 5px;
+}
+
+@media (min-width:768px) {
+    header {
+        background-image: url("../img/rsvp_main.png");
+        background-position: top;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
