@@ -86,3 +86,11 @@ ul {
 .panel-content a:hover {
     color: #ccc;
 }
+
+main p {
+    text-align: justify;
+}
+
+.panel-heading h4 {
+    margin-left: -10000px;
+}
