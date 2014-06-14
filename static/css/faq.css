@@ -18,3 +18,43 @@
         background-repeat: no-repeat;
     }
 }
+
+.faqbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    background-image: url("../img/faq_main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid #fff;
+}
+
+.faq-container {
+    display: inline-block;
+}
+
+.faqnav {
+    float: none;
+}
+
+footer {
+    margin-bottom: 40px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #222;
+    color: #eee;
+}
+
+.panel-body {
+    color: #222;
+    text-align: left;
+}
+
+.panel-body a, 
+.panel-body a:focus,
+.panel-body a:hover {
+    color: #d01111;
+}
