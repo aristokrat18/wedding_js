@@ -1,6 +1,6 @@
 /************************* BACKGROUND *************************/
 .site-wrapper {
-    background-image: url("../img/accommodations_main.png");
+    background-image: url("../img/accommodations_main%20.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
 
 @media (min-width:768px) {
     header {
-        background-image: url("../img/accommodations_header.png");
+        background-image: url("../img/accommodations_header.jpg");
         background-position: top;
         background-size:cover;
         background-repeat: no-repeat;
@@ -33,19 +33,19 @@ ul {
 }
 
 #lenox {
-    background-image: url('../img/lenox.png');
+    background-image: url('../img/lenox.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #copley {
-    background-image: url('../img/copley.png');
+    background-image: url('../img/copley.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #westin {
-    background-image: url('../img/westin.png');
+    background-image: url('../img/westin.jpg');
     background-position: center;
     background-size: cover;
 }

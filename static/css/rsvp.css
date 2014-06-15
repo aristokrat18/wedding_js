@@ -1,6 +1,6 @@
 /************************* BACKGROUND *************************/
 .site-wrapper {
-    background-image: url("../img/rsvp_main.png");
+    background-image: url("../img/rsvp_main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@
 
 @media (min-width:768px) {
     header {
-        background-image: url("../img/rsvp_main.png");
+        background-image: url("../img/rsvp_main.jpg");
         background-position: top;
         background-size:cover;
         background-repeat: no-repeat;
