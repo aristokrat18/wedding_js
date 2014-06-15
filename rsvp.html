@@ -7,7 +7,7 @@
     <meta name="description" content="Megan and Risto's wedding web site">
     <meta name="author" content="Risto Keravuori">
     <link rel="shortcut icon" href="static/img/favicon.png">
-    <title>Megan & Risto's Wedding</title>
+    <title>Megan &amp; Risto's Wedding</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="static/css/base.css">
@@ -26,15 +26,74 @@
                         <li><a href="/accommodations">Accommodations</a></li>
                         <li><a href="/registry">Registry</a></li>
                         <li><a href="/faq">FAQ</a></li>
+                        <li><a href="mailto:rm@ristomegan.com">Contact</a></li>
                     </ul>
                 </div>
             </header>
 
             <main>
-                <div clas="inner center width-control">
-                    <div class="coming-soon">
-                        <h1><div>-</div><div>Online RSVP coming soon</div><div>-</div></h1>
-                    </div>
+                <div class="inner center width-control">
+                    <h3>Thanks for RSVPing online. We really appreciate it. Once you're done, feel free to use the envelope that we sent you to send us a note or something.</h3>
+                    
+                    <form class="form-horizontal" role="form" method="post" action="rsvp">
+                        
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Your Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder="What you like to be called">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputGuest" class="col-sm-2 control-label">Guest Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputGuest" name="guest" placeholder="Name of your adult guest (if you're bringing one)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">Your Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="In case we need to send you an update">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputPhone" class="col-sm-2 control-label">Your Digits</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="In case we need to contact you in Boston">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputAddress" class="col-sm-2 control-label">Your Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="So that we can send you something later">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputFood" class="col-sm-2 control-label">Food Allergies</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputFood" name="food" placeholder="Tell us what you can't eat">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputOther" class="col-sm-2 control-label">Other Notes?</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputOther" name="other" placeholder="Anything else on your mind">
+                            </div>
+                        </div>
+                        
+                        <h5>*if you can't attend, we only need your name, but feel free to leave us a note if you'd like!</h5>
+                        
+                        <input type="submit" class="btn btn-lg btn-default" value="I'm coming!" name="accept">
+                        <input type="submit" class="btn btn-lg btn-default" value="I can't make it..." name="decline">
+                        
+                    </form>
+                    
+                    <h4>If you have any questions, don't hesitate to <a href="mailto:rm@ristomegan.com">email us</a>.</h4>
                 </div>
             </main>
 

@@ -20,7 +20,8 @@ if (!global.hasOwnProperty('db')) {
     global.db = {
         Sequelize: Sequelize,
         sequelize: sequelize,
-        Guest: sequelize.import(__dirname + '/guest')
+        Accept: sequelize.import(__dirname + '/accept'),
+        Decline: sequelize.import(__dirname + '/decline')
     };
         
     

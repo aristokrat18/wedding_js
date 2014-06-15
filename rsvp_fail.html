@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Megan and Risto's wedding web site">
+    <meta name="author" content="Risto Keravuori">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+    <title>Megan &amp; Risto's Wedding</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="static/css/rsvp.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+                
+            <header class="clearfix">
+                <div class="inner center width-control">
+                    <h3 class="header-name">Megan <small>&amp;</small> Risto</h3>
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="/rsvp">RSVP</a></li>
+                        <li><a href="/accommodations">Accommodations</a></li>
+                        <li><a href="/registry">Registry</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="mailto:rm@ristomegan.com">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <main>
+                <div class="inner center width-control">
+                    <h3>Looks like something went wrong. Can you please try again?</h3>
+                    <h4><em>*name, email, and phone number are required if you're coming; if not, we just need your name</em></h4>
+                    
+                    <form class="form-horizontal" role="form" method="post" action="rsvp">
+                        
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Your Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder="What you like to be called">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputGuest" class="col-sm-2 control-label">Guest Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputGuest" name="guest" placeholder="Name of your adult guest (if you're bringing one)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">Your Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="In case we need to send you an update">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputPhone" class="col-sm-2 control-label">Your Digits</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="In case we need to contact you in Boston">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputAddress" class="col-sm-2 control-label">Your Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="So that we can send you something later">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputFood" class="col-sm-2 control-label">Food Allergies</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputFood" name="food" placeholder="Tell us what you can't eat">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputOther" class="col-sm-2 control-label">Other Notes?</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputOther" name="other" placeholder="Anything else on your mind">
+                            </div>
+                        </div>
+                        
+                        <input type="submit" class="btn btn-lg btn-default" value="I'm coming!" name="accept">
+                        <input type="submit" class="btn btn-lg btn-default" value="I can't make it..." name="decline">
+                        
+                    </form>
+                    
+                    <h4>If you have any questions, don't hesitate to <a href="mailto:rm@ristomegan.com">email us</a>.</h4>
+                </div>
+            </main>
+
+            <footer>
+                <div class="inner center width-control">
+                    <p>Site by <a href="http://risto.io">Risto Keravuori</a>.</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
