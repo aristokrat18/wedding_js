@@ -87,7 +87,7 @@
                             </div>
                             <div id="generalOne" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    We have a 1920s, lost-generation-in-Paris theme, but it's very liberally interpreted.
+                                    We have a 1920s, lost-generation-in-Paris theme, but it's very liberally interpreted. If you've seen "Midnight in Paris," that's the feel we're going for.
                                 </div>
                             </div>
                         </div>
@@ -169,6 +169,21 @@
                             <div id="travelTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     There are room blocks reserved at three nearby hotels. See the <a href="accommodations">accommodations section</a> for more information.
+                                </div>
+                            </div>
+                        </div>
+          
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#travel" href="#travelThree">
+                                        What is the difference between the three hotels with room blocks?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="travelThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    All three hotels are located in the Back Bay area of Boston, which is a short cab ride to the venue. The room block rates are similar as well: the Lenox is $269/night, the Copley Square Hotel is $259/night, and the Westin is $219/night. We're staying at the Lenox.
                                 </div>
                             </div>
                         </div>
@@ -455,13 +470,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        var offset = 110;
+        $(document).ready(function() {
+            var offset = 110;
+
+            $('.faqnav li a').click(function (event) {
+                event.preventDefault();
+                $($(this).attr('href'))[0].scrollIntoView();
+                scrollBy(0, -offset);
+            });
+        });
         
-        $('.faqnav li a').click(function (event) {
-            event.preventDefault();
-            $($(this).attr('href'))[0].scrollIntoView();
-            scrollBy(0, -offset);
-        })
     </script>
 </body>
 </html>
