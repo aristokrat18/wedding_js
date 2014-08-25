@@ -43,6 +43,9 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.nav {
+    text-align: center;
+}
 .nav > li {
     display: inline-block;
     text-align: justify;
